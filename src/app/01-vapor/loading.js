@@ -12,8 +12,8 @@ async function VaporExercise() {
         <h1>My games</h1>
       </header>
       <div className="game-grid">
-        {range(15).map(() => (
-          <LibraryGameCard />
+        {range(15).map((_, i) => (
+          <LibraryGameCard key={i} />
         ))}
       </div>
     </section>
