@@ -10,15 +10,13 @@ const primaryFont = Kanit({
   subsets: ['latin'],
 });
 
-function WebBaseLayout({ children }) {
+async function WebBaseLayout({ children }) {
   return (
     <div
       className="web-base"
       style={{
-        '--font-family-primary':
-          primaryFont.style.fontFamily,
-      }}
-    >
+        '--font-family-primary': primaryFont.style.fontFamily,
+      }}>
       <SiteHeader />
       <main>{children}</main>
       <SiteFooter />
